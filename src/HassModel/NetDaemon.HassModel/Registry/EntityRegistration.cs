@@ -39,4 +39,9 @@ public record EntityRegistration
     /// The options set for this Entity
     /// </summary>
 	public EntityOptions? Options {get; init;}
+
+    /// <summary>
+    /// The unique id for this Entity
+    /// </summary>
+    public string? UniqueId {get; init;}
 }

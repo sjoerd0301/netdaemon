@@ -115,7 +115,8 @@ internal static class HassObjectMapper
             Device = device,
             Labels = hassEntity.Labels.Select(registry.GetLabel).OfType<Label>().ToList(),
             Platform = hassEntity.Platform,
-            Options = hassEntity.Options?.Map()
+            Options = hassEntity.Options?.Map(),
+            UniqueId = hassEntity.UniqueId
         };
     }
 

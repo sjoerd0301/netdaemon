@@ -15,7 +15,8 @@ public record HassEntity
     [JsonPropertyName("platform")] public string? Platform { get; init; }
 
     [JsonPropertyName("labels")] public IReadOnlyList<string> Labels { get; init; } = [];
-	        
-    [JsonPropertyName("options")]public HassEntityOptions? Options { get; init; }
-}
 
+    [JsonPropertyName("options")] public HassEntityOptions? Options { get; init; }
+
+    [JsonPropertyName("unique_id")] public string? UniqueId { get; init; }
+}
